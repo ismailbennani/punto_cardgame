@@ -1,0 +1,85 @@
+.punto {
+  width: 100%;
+  /* height: 100%; */
+  text-align: center;
+}
+
+.punto > header {
+  margin: auto;
+}
+
+.punto .menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.punto .menu input {
+  flex: 0 0 auto;
+  margin: auto 10px;
+}
+
+.punto > .board {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  user-select: none;
+}
+
+.punto > .next_card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  user-select: none;
+}
+
+.punto > .next_card > div {
+  display: block;
+  margin: auto
+}
+
+.punto > .next_card .remaining_cards {
+  font-size: 0.5em;
+}
+
+
+.punto .scoreboard {
+  text-align: left;
+  margin: auto;
+  padding: 0px 30px;
+  border-top: 1px solid black;
+}
+
+.punto .scoreboard ul {
+  list-style: none
+}
+
+.punto .scoreboard li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.punto .scoreboard li + li:before {
+  border-top: 1px solid black;
+}
+
+.punto .scoreboard .playerName {
+  text-transform: uppercase;
+  flex: 0 0 auto;
+}
+
+.punto .scoreboard .scores {
+  flex: 0 0 auto;
+  display: flex;
+}
+
+.punto .scoreboard .totalScore {
+  flex: 0 0 auto;
+}
+
+.punto .scoreboard .score + .score:before {
+  content: "+";
+}

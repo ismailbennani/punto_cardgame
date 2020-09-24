@@ -1,0 +1,43 @@
+.punto .scoreboard {
+  text-align: left;
+  margin: auto;
+  padding: 0px 30px;
+  border-top: 1px solid black;
+}
+
+.punto .scoreboard ul {
+  list-style: none
+}
+
+.punto .scoreboard li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.punto .scoreboard li + li:before {
+  border-top: 1px solid black;
+}
+
+.punto .scoreboard .playerName {
+  text-transform: uppercase;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+.punto .scoreboard .scores {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.punto .scoreboard .totalScore {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.punto .scoreboard .score + .score:before {
+  content: "+";
+}
